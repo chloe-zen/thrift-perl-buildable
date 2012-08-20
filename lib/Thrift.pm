@@ -1,4 +1,3 @@
-# ABSTRACT: Perl module of Thrift
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements. See the NOTICE file
@@ -18,8 +17,7 @@
 # under the License.
 #
 
-package Thrift;
-our $VERSION = '0.6.1_01';
+our $VERSION = '0.8.0';
 
 require 5.6.0;
 use strict;
@@ -77,6 +75,8 @@ use constant INVALID_MESSAGE_TYPE => 2;
 use constant WRONG_METHOD_NAME    => 3;
 use constant BAD_SEQUENCE_ID      => 4;
 use constant MISSING_RESULT       => 5;
+use constant INTERNAL_ERROR       => 6;
+use constant PROTOCOL_ERROR       => 7;
 
 sub new {
     my $classname = shift;

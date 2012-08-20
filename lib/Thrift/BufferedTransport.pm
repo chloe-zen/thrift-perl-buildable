@@ -25,9 +25,6 @@ use Thrift;
 use Thrift::Transport;
 
 package Thrift::BufferedTransport;
-BEGIN {
-  $Thrift::BufferedTransport::VERSION = '0.6.1';
-}
 use base('Thrift::Transport');
 
 sub new
@@ -113,9 +110,6 @@ sub flush
 # BufferedTransport factory creates buffered transport objects from transports
 #
 package Thrift::BufferedTransportFactory;
-BEGIN {
-  $Thrift::BufferedTransportFactory::VERSION = '0.6.1';
-}
 
 sub new {
     my $classname = shift;

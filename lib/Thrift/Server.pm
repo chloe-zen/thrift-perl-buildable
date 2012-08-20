@@ -29,9 +29,6 @@ use Thrift::BinaryProtocol;
 # Server base class module
 #
 package Thrift::Server;
-BEGIN {
-  $Thrift::Server::VERSION = '0.6.1';
-}
 
 # 3 possible constructors:
 #   1.  (processor, serverTransport)
@@ -133,9 +130,6 @@ sub _handleException
 # SimpleServer from the Server base class that handles one connection at a time
 #
 package Thrift::SimpleServer;
-BEGIN {
-  $Thrift::SimpleServer::VERSION = '0.6.1';
-}
 use base qw( Thrift::Server );
 
 sub new
@@ -179,9 +173,6 @@ sub serve
 # ForkingServer that forks a new process for each request
 #
 package Thrift::ForkingServer;
-BEGIN {
-  $Thrift::ForkingServer::VERSION = '0.6.1';
-}
 use base qw( Thrift::Server );
 
 use POSIX ":sys_wait_h";

@@ -25,9 +25,6 @@ use Thrift;
 use Thrift::Transport;
 
 package Thrift::MemoryBuffer;
-BEGIN {
-  $Thrift::MemoryBuffer::VERSION = '0.6.1';
-}
 use base('Thrift::Transport');
 
 sub new

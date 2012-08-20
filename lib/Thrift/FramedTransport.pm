@@ -30,9 +30,6 @@ use Thrift::Transport;
 # @package thrift.transport
 #
 package Thrift::FramedTransport;
-BEGIN {
-  $Thrift::FramedTransport::VERSION = '0.6.1';
-}
 
 use base('Thrift::Transport');
 
